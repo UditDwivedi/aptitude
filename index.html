@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude</title>
+    <style>
+        img{
+            max-width: 80vw;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <label>Start </label>
+    <input type="date" id="date1" disabled>
+    <input type="number" id="day1"><br>
+    <label>Ques</label>
+    <input type="date" id="date2"><br>
+    <p id="dayresult"></p>
+    <button class="dateSub">Submit</button><br>
+
+    <label for="hour">Enter the hour (between 1 and 12):</label>
+    <input type="number" id="hourInput" min="1" max="12"><br>
+
+    <label for="minute">Enter the minute (between 0 and 59):</label>
+    <input type="number" id="minuteInput" min="0" max="59"><br>
+
+    <button onclick="calculateAngle()">Calculate Angle</button><br>
+
+    <p id="angleResult"></p><br>
+
+    <h1>Number Calculator</h1><br>
+
+    <img src="apt01.PNG"><br>
+    <img src="apt02.PNG"><br>
+    <img src="apt03.PNG"><br>
+
+    <script src="script.js"></script>
+</body>
+</html>
