@@ -20,7 +20,8 @@ dateSub.addEventListener("click",()=>{
     }else{
         let d1 = new Date(date1.value).getDay();
         let dif = day1.value - d1;
-        d2 += dif;
+        d2 = (dif+d2+7)%7;
+        console.log(dif,d2);
         document.querySelector("#dayresult").innerHTML = days[d2]
     }
        
